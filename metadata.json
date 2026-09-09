@@ -1,0 +1,6 @@
+{
+  "name": "SICDA HSE - Conformité Prestataires & Rondes",
+  "description": "Plateforme intégrée de validation de la conformité HSE des prestataires, suivi des interventions en temps réel et gestion des rondes de sécurité industrielle SICDA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

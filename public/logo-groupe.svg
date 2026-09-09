@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hexBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="45%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#0C2340" />
+    </linearGradient>
+    <linearGradient id="innerBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9" />
+      <stop offset="50%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Soft Pill (Optional, transparent) -->
+  <rect width="200" height="200" rx="24" fill="none" />
+
+  <!-- Outer Hexagon Border -->
+  <polygon
+    points="100,10 184,56 184,144 100,190 16,144 16,56"
+    fill="none"
+    stroke="url(#hexBlue)"
+    stroke-width="9"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner Left Facet: Monogram "M" -->
+  <g fill="none" stroke="url(#hexBlue)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left outer wing conforming to hex -->
+    <path d="M 94 28 L 29 63 L 29 137 L 94 172" />
+    
+    <!-- Letter M vertical columns and internal geometry -->
+    <line x1="44" y1="76" x2="44" y2="140" stroke-width="8" stroke="url(#hexBlue)" />
+    <line x1="62" y1="76" x2="62" y2="140" stroke-width="8" stroke="url(#innerBlue)" />
+    <line x1="80" y1="52" x2="80" y2="152" stroke-width="8" stroke="url(#innerBlue)" />
+    
+    <!-- Top bridge of M -->
+    <path d="M 44 76 L 80 52" stroke-width="7" />
+  </g>
+
+  <!-- Vertical Divider Gap -->
+  <line x1="100" y1="12" x2="100" y2="188" stroke="#FFFFFF" stroke-width="6" />
+
+  <!-- Inner Right Facet: Monogram "P" / "D" -->
+  <g fill="none" stroke="url(#hexBlue)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Right outer wing conforming to hex -->
+    <path d="M 106 28 L 171 63 L 171 137 L 106 172" />
+
+    <!-- Stem of P -->
+    <line x1="118" y1="50" x2="118" y2="156" stroke-width="8" stroke="url(#innerBlue)" />
+
+    <!-- Top Loop of P -->
+    <path d="M 118 56 L 152 74 L 152 108 L 118 108" stroke-width="7.5" stroke="url(#hexBlue)" />
+
+    <!-- Lower Accent / Geometry -->
+    <path d="M 132 120 L 152 130 L 132 144" stroke-width="6.5" stroke="url(#innerBlue)" />
+  </g>
+</svg>
